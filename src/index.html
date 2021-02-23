@@ -1,58 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<head> 
+  <link href="style.css"  rel="stylesheet" type="text/css"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://kit.fontawesome.com/eb71235840.js" crossorigin="anonymous"></script>
   <title>Document</title>
 </head>
 <body>
-  <div class="container p-4">
-    <div class="row">
-      <div class="col-md-6">
-        <div class="card">
-          <div class="card-body">
-            <h1 class="h4">Lista de tareas</h1>
-            <form id="task-form">
-              <div class="form-group">
-                <input type="text" id="task-title" class="form-control" class="Task Title" placeholder="Task Title"
-                  autofocus>
-              </div>
-              <div class="form-group">
-                <textarea id="task-description" rows="3" class="form-control" placeholder="Task Description"></textarea>
-              </div>
-
-              <button class="btn btn-primary" id="btn-task-form">
-                Save
-              </button>
-
-            </form>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6" id="tasks-container"></div>
-    </div>
+  <header class="header">
+    <img class="logo" src="img/logo.png" alt="logo">
+  </header>
+  <div id="post-form">
+    <form id="form">
+      <h1>Escribe tu post</h1>
+      <input id="post-title" type="text" placeholder="Título">
+      <input id="post-location" type="text" placeholder="Coordenadas">
+      <textarea id="post-description" type="text" placeholder="Descripción" rows="8"></textarea>
+      <button id="save" value="submit">Publicar</button>
   </div>
+  <div id="back-list"><div id="post-list"></div></div>
+  <div id="post-container"></div>
+    
+ 
+  <footer>
+    <span><i class="fas fa-arrow-alt-circle-left"></i></span>
+    <span><i class="fas fa-plus-circle"></i></i></span>
+    <span><i class="fas fa-user-circle"></i></i></span>
+  </footer>
 
- <!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="https://www.gstatic.com/firebasejs/8.2.8/firebase-app.js"></script>
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
 
 <!-- TODO: Add SDKs for Firebase products that you want to use
      https://firebase.google.com/docs/web/setup#available-libraries -->
-<script src="https://www.gstatic.com/firebasejs/8.2.8/firebase-analytics.js"></script>
-<script src="https://www.gstatic.com/firebasejs/8.2.8/firebase-firestore.js"></script>
+
+     <script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-analytics.js"></script>
 
 <script>
   // Your web app's Firebase configuration
   // For Firebase JS SDK v7.20.0 and later, measurementId is optional
   var firebaseConfig = {
-    apiKey: "AIzaSyCyXSW_o10oSodP_GKDizwlH7h9JBZO0v0",
-    authDomain: "social-network-gema.firebaseapp.com",
-    projectId: "social-network-gema",
-    storageBucket: "social-network-gema.appspot.com",
-    messagingSenderId: "934703536034",
-    appId: "1:934703536034:web:68945a09b6e76996ec84fb",
-    measurementId: "G-HH2D6G464R"
+    apiKey: "AIzaSyAfw4xz2PjGD2eXmt6ObeiHMJFyeWAPAxo",
+    authDomain: "red-social-6d454.firebaseapp.com",
+    projectId: "red-social-6d454",
+    storageBucket: "red-social-6d454.appspot.com",
+    messagingSenderId: "850467784868",
+    appId: "1:850467784868:web:4c3852e2c8d87d26a0be31",
+    measurementId: "G-YDWYMYLJ5L"
   };
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
