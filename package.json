@@ -34,5 +34,17 @@
   },
   "engines": {
     "node": ">=10"
-  }
+  },
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gemamatt/CDMX010-social-network.git"
+  },
+  "author": "gema matt",
+  "bugs": {
+    "url": "https://github.com/gemamatt/CDMX010-social-network/issues"
+  },
+  "homepage": "https://github.com/gemamatt/CDMX010-social-network#readme"
 }
